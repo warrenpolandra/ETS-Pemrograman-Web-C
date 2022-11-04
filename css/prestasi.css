@@ -6,7 +6,7 @@ body{
 .welcome{
 	height: 100%;
 	padding: 1px;
-	background-color: rgb(50, 50, 214);
+	background-color: rgba(32,78,147,255);
 }
 
 .welcome h2{
@@ -35,12 +35,23 @@ body{
 
 .menu {
 	border-bottom: 5px solid black;
+	margin-left: 400px;
+	display: flex;
+   	align-items:center;
 }
 
-.menu h2{
-	margin-right: 700px;
+.menu img{
+	margin-left: 20px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.menu span{
+	margin-left: 10px;
 	font-family: 'comic sans ms';
 	font-size: 30px;
+  	align-items:center;
+	line-height: 0px;
 }
 
 .dasboard{
@@ -49,7 +60,7 @@ body{
 	width: 400px;
 	height: 1000px;
 	border: 5px solid black;
-	background-color: rgb(50, 50, 214);
+	background-color: rgba(32,78,147,255);
 	display: inline;
 }
 
@@ -95,7 +106,7 @@ h2{
 }
 
 .table th{
-	background-color: rgb(50, 50, 214);
+	background-color: rgba(32,78,147,255);
 	color:#ffffff;
 }
 
