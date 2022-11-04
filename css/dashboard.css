@@ -89,33 +89,6 @@ h2{
 	box-sizing: border-box;
 }
 
-.card{
-	width: 500px;
-	height: 100px;
-}
-
-.table{
-	margin-top: 20px;
-	width: 80%;
-	border-collapse: collapse;
-	float: right;
-}
-
-.table td,.table th{
-  padding:12px 15px;
-  border:1px solid #ddd;
-  text-align: center;
-  font-size:16px;
-}
-
-.table th{
-	background-color: rgba(32,78,147,255);
-	color:#ffffff;
-}
-
-.table tbody tr:nth-child(even){
-	background-color: #f5f5f5;
-}
 
 /*responsive*/
 
@@ -126,7 +99,33 @@ h2{
 	display: flex;
 	flex-wrap: wrap;
 	margin-left: 430px;
-	margin-top: 50px;
+	margin-top: 15px;
+}
+
+.item-list a{
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	font-family: 'comic sans ms';
+	font-size: 12px;
+	margin-bottom: 0;
+}
+
+.item-list h3{
+	font-size: 70px;
+	text-align: left;
+	margin-top: 0;
+	padding-left: 20px;
+	margin-bottom: 0;
+}
+
+.item-list img{
+	padding-left: 80px;
+}
+
+.item-list h4{
+	margin-top: 0;
+	padding-left: 20px;
+	font-size: 20px;
 }
 
 .animal-list{
@@ -137,6 +136,16 @@ h2{
 	background-color: rgb(0, 213, 255);
 }
 
+.animal-list h1{
+	margin-bottom: 0;
+}
+
+.item-list h1{
+	padding-left: 15px;
+	padding-top: 10px;
+	padding-bottom: 0;
+}
+
 .prestasi-list{
 	width: 300px;
 	height: 180px;
@@ -145,12 +154,26 @@ h2{
 	background-color: rgb(255, 203, 60);
 }
 
+.prestasi-list h1{
+	margin-bottom: 0;
+}
+
 .ketuntungan-list{
 	width: 300px;
 	height: 180px;
 	border-radius: 5%;
 	object-fit: cover;
 	background-color: rgb(13, 255, 0);
+}
+
+.ketuntungan-list h1{
+	margin-bottom: 0;
+}
+
+.ketuntungan-list h3{
+	padding-top: 20px;
+	padding-bottom: 25px;
+	font-size: 35px;
 }
 
 .calendar-list{
@@ -162,6 +185,10 @@ h2{
 	background-color: rgb(255, 67, 255);
 }
 
+.calendar-list h1{
+	margin-bottom: 0;
+}
+
 .medicine-list{
 	margin-top: 50px;
 	width: 300px;
@@ -169,6 +196,10 @@ h2{
 	border-radius: 5%;
 	margin-right: 60px;
 	background-color: rgb(255, 67, 67);
+}
+
+.medicine-list h1{
+	margin-bottom: 0;
 }
 
 .item-card img {
