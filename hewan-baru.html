@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Input Hewan Ternak Baru</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/hewan-baru.css"/>
+  <script type="text/javascript" src="jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="jquery/jquery.validate.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+        $('#frm-hwn').validate({
+            rules: {
+                jenis : {
+                    required: true
+                },
+                id : {
+                    required: true
+                },
+                nama: {
+                    required: true,
+                },
+                gender: {
+                    required: true
+                },
+                umur: {
+                    required: true,
+                    digits: true,
+                    range: [0, 100]
+                },
+                berat: {
+                    required: true,
+                    digits: true
+                }
+            },
+            messages: {
+                jenis: {
+                    required: " Jenis hewan harus diisi",
+                },
+                id: {
+                    required: " ID hewan harus diisi"
+                },
+                nama: {
+                    required: " Nama hewan harus diisi",
+                },
+                gender: {
+                    required: " Gender hewan harus diisi"
+                },
+                umur: {
+                    required: " Umur hewan harus diisi",
+                    digits: " Umur hewan harus hanya terdiri dari angka",
+                    range: " Umur hewan harus ada di antara 0-100"
+                },
+                berat: {
+                    required: " Berat hewan harus diisi",
+                    digits: " Berat hewan harus hanya terdiri dari angka"
+                }
+            }
+        });
+    });
+</script>
+</head>
+
+<body>
+	<div class="welcome">
+		<h2>Selamat datang, ADMIN</h2>
+	</div>
+	<div class="header">
+		<br><br>
+		<h1>Sistem Informasi Ternak Hewan</h1>
+	</div>
+
+	<div class="dasboard">
+		<img src="./assets/white/dashboard-icon.svg"><a href="index.html">Dashboard</a><hr/>
+		<img src="./assets/white/list-icon.svg"><a href="daftar-ternak.html">Daftar Hewan Ternak</a><hr/>
+		<img src="./assets/white/add-icon.svg"><a>Hewan Ternak Baru</a><hr/>
+		<img src="./assets/white/history-icon.svg"><a href="transaksi.html">Riwayat Transaksi Ternak</a><hr/>
+	</div>
+
+	<div class="menu">
+		<img src="./assets/black/cow-icon.svg">
+		<span>Input Hewan Ternak Baru</span>
+	</div>
+        
+    <div class="form">    
+        <form id="frm-hwn">
+            <label for="jenis" class="labelfrm">Jenis Hewan: </label></br>
+            <input type="text" name="jenis" id="jenis" maxlength="10" size="20" placeholder="Ayam/Sapi/Kambing"/></br>
+                
+            <label for="id" class="labelfrm">ID: </label></br>
+            <input type="text" name="id" id="id" size="5" placeholder="A-XXX"/></br>
+
+            <label for="nama" class="labelfrm">Nama: </label></br>
+            <input type="text" name="nama" id="nam" maxlength="10" size="20" placeholder="xxxx"/></br>
+
+            <label for="gender" class="labelfrm">Jenis Kelamin: </label></br>
+            <input type="text" name="gender" id="gender" maxlength="10" size="20" placeholder="Jantan/Betina"/></br>
+
+            <label for="umur" class="labelfrm">Umur(tahun): </label></br>
+            <input type="text" name="umur" id="umur" maxlength="3" size="5" placeholder="xxx"/></br>
+
+            <label for="berat" class="labelfrm">Berat Badan(kg): </label></br>
+            <input type="text" name="berat" id="berat" size="5" placeholder="xxx"/></br>
+            
+            <div class="wrapper">
+                <label for="kawin" class="labelfrm">Hasil Kawin: </label>
+                <input class="checkbox" type="checkbox" id="kawin" name="kawin" value="kawin">
+            </div>
+
+            <label for="submit" class="labelfrm"></label>
+            <input type="submit" name="Submit" value="Submit" onclick="window.location.href = 'index.html';"/>
+        </form>
+    </div>
+</body>
+</html>
